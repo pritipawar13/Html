@@ -1,0 +1,91 @@
+<html>
+
+<head>
+    <title> Forms in Html</title>
+</head>
+<style>
+    lable {
+        display: block;
+        width :200px;
+        float :left;
+        text-align:  right;
+        margin :10px 5px;
+        clear :left
+    }
+    input ,select,textarea{
+        margin :10px 5px;
+        vertical-align:  middle;
+
+    }
+    #submit{
+        margin-left: 200px;
+    }
+</style>
+
+<body>
+    <h1> Forms </h1>
+    <form action="form-submit.php" method="post">
+       <fieldset>
+       <legend> Your Personal Informations     </legend>
+       <lable for="first-name"> First Name : </lable>
+        <input type='text' name='first-name' id = 'first-name'/>
+        <br />
+        <lable for='email'>Email : </lable>
+        <input type='text' name='email' placeholder="enter valid email" id ='email' />
+
+    </fieldset>
+
+        <br />
+       <lable for="checkbox" > Checkbox : </lable>
+        <input type="checkbox" name="check" value="ch1" id ='checkbox' /> check 1
+        <input type="checkbox" name="check" value="ch2" id ='checkbox' /> check 2  
+        <input type="checkbox" name="check" value="ch3" id ='checkbox' /> check 3 
+        <br />
+       <lable for='radio'> Radio : </lable>
+        <input type="radio" name="radio" value="r1"  id ='radio'/> Radio 1
+        <input type="radio" name="radio" value="r2"  id ='radio' /> Radio 2
+        <input type="radio" name="radio" value="r3"  id ='radio' /> Radio 3
+        <br />
+
+       <lable for ='message'> Message </lable> <textarea id = 'message'> You can message here </textarea>
+        <br />
+
+        <lable for="dropdown">DropDown : </lable>
+        <select type="DropDown">
+            <option value=o1 id ='dropdown'>option 1 </option>
+            <option value=o2 id ='dropdown' > ption 2 </option>
+            <option value=o3 id ='dropdown' > option 3</option>
+            <option value=o4 id ='dropdown' >option 4</option>
+        </select>
+
+        <br />
+
+       <lable for="password"> Password </lable>
+        <input type = "password" name ="password" id ='password' />
+
+        <br />
+        <lable for="number">Number </lable>
+         <input type ="number"  name ="number" id ='number'/>
+        <br />
+        <lable for="range"></lable>
+        Range 1 <input type ="range" name ="range" min =1 and max="10" value ="1" id ='range'/> 10
+        <br />
+
+        <lable for="date">Date </lable> 
+        <input type ="date"  name ="date" id ='date'/>
+        <br />
+
+        <lable for= 'time'> Time </lable>
+         <input type ="time"  name ="time" id ='time'/>
+        <br />
+
+        <lable for ="color">Color </lable>
+         <input type ="color"  name ="color" id ='color'/>
+
+        <br />
+
+        <input type='submit' value='send' />
+    </form>
+</body>
+
+</html>
